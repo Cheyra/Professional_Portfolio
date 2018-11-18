@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Dungeons & Dickinsons</title>
+    <!--link to bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    
+    <!--LINK TO FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!--link to font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU">
+
+    <!--link to firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <!-- link to jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--link to javascript-->
+    <script src=assets/javascript/app.js></script> 
+
+    <!--link to moment-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.13.0/moment.min.js"></script>
+    <!--link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Indie+Flower" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="app.css"></link> -->
+    <link rel="stylesheet" href="assets/css/style.css"> </link>
+    <!--link bootstrap js for modal-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <!--**************Modal*********************************************-->
+    <div class="modal fade  " id="onLoad" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How did you hear about this site?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="card animated fadeIn">
+                        <div class="custom-control custom-radio hello">
+
+
+                            <br>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+                                <label class="custom-control-label options pl-3" for="defaultGroupExample1">Google</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios">
+                                <label class="custom-control-label options pl-3" for="defaultGroupExample2">Linkedin</label>
+
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+                                <label class="custom-control-label options pl-3" for="defaultGroupExample3">Business Card</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="defaultGroupExample4" name="groupOfDefaultRadios">
+                                <label class="custom-control-label options pl-3" for="defaultGroupExample4">Referred by someone</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="defaultGroupExample5" name="groupOfDefaultRadios">
+                                <label class="custom-control-label options pl-3" for="defaultGroupExample5">Other</label>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="text-center mb-2 submit">
+                        <button type="submit " class="btn btn-primary center-block " id="enter ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HomePage Jumbotron-->
+    <div class="jumbotron home mx-auto text-center pt-0 pb-0 heading ">
+
+        <img id="myLogo " class="mx-auto text-center" src="assets/images/dragon-icon.png ">
+        <div class="text-center portfolio-title">
+            <em>Dungeons & Dickinsons
+                <br> Web Development</em>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-10">
+                <div id="name-title" class="text-left"> Creator: Cheyra Dickinson</div>
+            </div>
+
+            <div class="col-md-1 social-links">
+                <a class="social-links" href="https://www.linkedin.com/in/cheyra-dickinson-b2b64a16b/">Linkedin</a>
+            </div>
+            <div class="col-md-1 social-links">
+                <a class="social-links" href="https://github.com/Cheyra">Github</a>
+            </div>
+        </div>
+    </div>
+    <!--homePage bottom-->
+    <container class=" sectionHolder">
+        <div class="row ">
+            <br>
+
+            <div class="col-md-3 px-1 sections text-center mx-auto about">
+                <span class="section-text about">About</span>
+            </div>
+
+            <div class="col-md-3 px-1 sections text-center mx-auto portfolio ">
+                <span class="section-text portfolio">Portfolio</span>
+            </div>
+
+            <div class="col-md-3 px-1 sections text-center mx-auto contact ">
+                <span class="section-text contact">Contact </span>
+            </div>
+            
+
+        </div>
+        
+    </container>
+    <!--*********nav bar headding*********************************************************************************************-->
+    <nav class="navbar nav-container">
+
+        <div class="container top">
+            <div class="row">
+                <div class="col-md-4 text-left">
+                    <!-- <div class="container"> -->
+                    <nav class="navbar text-left m-0 px-0 nav-title">
+                        <h1 class="navbar-brand nav-title">Dungeons & Dickinson
+                            <br> Web Development</h1>
+                    </nav>
+                    <!-- </div> -->
+
+                </div>
+                <div class="col-md-2">
+
+
+                    <nav class="navbar navbar-expand-lg">
+                        <h4 class="navbar-brand home-button nav-text"> Home</h4>
+                    </nav>
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <nav class="navbar navbar-expand-lg ">
+                        <h4 class="navbar-brand nav-text about">About</h4>
+                    </nav>
+
+                </div>
+
+                <div class="col-md-2">
+
+
+                    <nav class="navbar navbar-expand-lg ">
+                        <h4 class="navbar-brand ml-0 nav-text portfolio">Portfolio</h4>
+                    </nav>
+
+                </div>
+
+
+
+                <div class="col-md-2">
+
+
+                    <nav class="navbar navbar-expand-lg">
+                        <h4 class="navbar-brand nav-text contact">Contact</h4>
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+    <hr>
+
+<!--contact page body-->
+
+    <div class="jumbotron contact-box mx-auto mt-4" style=" width:70%">
+        <!--Name Box-->
+        <h3 class="contact-invite">Feel free to contact me!</h1>
+            <form class="contact-text" action="MAILTO:staierc@hotmail.com" method="post" enctype="text/plain">
+                Name
+                <br>
+                <input class="contact-text" id="name" type="text" name="user">
+                <br>
+
+                <!--Email Box-->
+                Email
+                <br>
+                <input class="contact-text" id="email" type="text" name="mail">
+                <br>
+
+                <!--Message Box-->
+                Message
+                <br>
+                <input class="contact-text" id="comment" type="text" name="Comment" size="80">
+                <br>
+                <br>
+
+                <!--Submit Button-->
+                <input class="contact-button" id="button" type="submit" value="Submit">
+            </form>
+            <br>
+            <br>
+    </div>
+    <!--*********************************************************************************-->
+<!--Portfolio Page Body-->
+
+    <div class="jumbotron portfolio-content mx-auto text-center mt-0">
+        <h2 class="mx-auto mt-0 portfolio-header">Key Projects</h2>
+        <div class="w3-content w3-display-container mx-auto px-0 text-center">
+            <div class="w3-display-container px-0 slides">
+                <a href="https://bmccaw.github.io/Project_1/" target="blank">
+                    <img class=" px-0 mx-auto" src="assets/images/planetarty-exploration.PNG" style="width:55%; height:350px"> </a>
+                <div class="w3-display-bottomleft pic-context w3-container w3-padding-16 w3-black">
+                    Planetary exploration
+                    <br> Git Hub Link:
+                    <a href="https://github.com/bmccaw/Project_1" target="blank">https://github.com/bmccaw/Project_1</a>
+                </div>
+                <br>
+            </div>
+            <div class="w3-display-container slides">
+                <a href="https://cheyra.github.io/giph-creator/" target="blank">
+                    <img class=" mx-auto" src="assets/images/Giph-creator.PNG" style="width:55%;  height:350px"> </a>
+                <div class="w3-display-bottomleft pic-context w3-container w3-padding-16 w3-black">
+                    Giph Creator
+                    <br> Git Hub Link:
+                    <a href="https://github.com/Cheyra/giph-creator" target="blank">https://github.com/Cheyra/giph-creator</a>
+                </div>
+            </div>
+            <div class="w3-display-container slides">
+                <a href="https://cheyra.github.io/TriviaGame/" target="blank">
+                    <img class=" mx-auto" src="assets/images/Trivia-game.PNG" style="width:55%;  height:350px"> </a>
+                <div class="w3-display-bottomleft pic-context w3-container w3-padding-16 w3-black">
+                    Iron Man Trivia Game
+                    <br> Git Hub Link:
+                    <a href="https://github.com/Cheyra/TriviaGame" target="blank">https://github.com/Cheyra/TriviaGame</a>
+                </div>
+            </div>
+            <div class="w3-display-container slides" target="blank">
+                <a href="https://cheyra.github.io/Train/">
+                    <img class=" mx-auto" src="assets/images/Train-Tracker.PNG" style="width:55%;  height:350px"> </a>
+                <div class="w3-display-bottomleft pic-context w3-container w3-padding-16 w3-black">
+                    Train Schedule Tracker
+                    <br> Git Hub Link:
+                    <a href="https://github.com/Cheyra/Train" target="blank">https://github.com/Cheyra/Train</a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!--**********************************************************************************-->
+ <!--About me page body-->
+    <div class="row about-me">
+        <div class="col-md-6 mt-0 mp-0 mx-0 px-0">
+            <img src="assets/images/boston.jpg" style="width:100%; height:100%" class="text-left" />
+        </div>
+        <div class="col-md-6">
+            <div class="card mx-0 px-0 mt-0 about-box about-me" style=" width:100%">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" style="color:darkcyan; font-size: 60px">
+                            Cheyra Dickinson
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row about-box">
+
+                        <div class="col-md-12">
+                            <p>I find Web Development to be an enriching field which utilizes both critical thinking and creativity.
+                                My current expertise lay in front end web development however I am working towards full stack
+                                development through a coding boot camp offered through UNH.
+                                <br>
+                                <br> I have worked on various projects utilizing HTML, CSS, Java Script, Bootstrap, Ajax calls,
+                                Firebase, and Node.js.
+                                <br>
+                                <br> In this program I will learn how to use other coding languages to do backend web development
+                                such as Java and Python. I know Web Development is a constantly changing and evolving field
+                                and I am ready to grow as a developer by constantly immersing myself in code.
+                                <br>
+                                <br>
+                                <em id="bruce"> "The doubters said 'Man can not fly', The doers said, 'Maybe, but we'll try', And finally
+                                    soared in the morning glow while non-believers watched from below.” </em>
+                                -Bruce Lee
+                            </p>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--***********************************************************************************-->
+    <!--footer-->
+    <footer class="page-footer foot foot-border pt-0 mt-5 mx-auto fixed-bottom">
+        <!--social media links-->
+        <div class="row text-center">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <li class="soc">
+                    <a href="http://twitter.com/intent/tweet?text=Click%20here%20for%20a%20cool%20upcoming%20Web%20Developer's%20Portfolio%20Site!%20https://bmccaw.github.io/Project_1/"
+                        title="">
+                        <span class="icon-big icon fab fa-twitter"></span>
+                    </a>
+                </li>
+            </div>
+            <div class="col-md-2">
+                <li class="soc">
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=https://bmccaw.github.io/Project_1/" title="">
+                        <span class=" icon-big icon fab fa-facebook"></span>
+                    </a>
+                </li>
+            </div>
+            <div class="col-md-2 ">
+                <li class="soc ">
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://bmccaw.github.io/Project_1/" title=" ">
+                        <span class="icon-big icon fab fa-linkedin "></span>
+                    </a>
+                </li>
+                <div class="col-md-3 ">
+
+
+
+                </div>
+            </div>
+
+
+    </footer>
+    
+         
+</body>
+
+</body>

@@ -1,0 +1,186 @@
+body{
+background-color:rgb(20, 5, 27);
+font-family: cursive
+
+}
+#onload{
+    background-color:black
+}
+
+.heading{
+    
+    background-color:rgb(22, 21, 21);
+    border-bottom: 5px;
+    border-bottom-color:darkcyan;
+    border-bottom-style:solid;
+    width:100%;
+    margin-right:0px;
+    }
+
+.heading:hover{
+    border-bottom-color:lightcyan
+}
+
+.social-links{
+    color:darkcyan}
+
+.social-links:hover{
+    color:lightcyan}
+
+#myLogo{
+    height:300px;
+   
+    }
+
+.portfolio-title{
+        
+    font-family: 'Black And White Picture', sans-serif ;
+    font-size: 40px
+    }
+
+.portfolio-title:hover{
+    color:lightcyan
+    }
+
+#name-title{
+        font-family: 'Indie Flower', cursive;
+        font-size: 30px;
+        margin:auto
+    }
+
+#name-title:hover{
+        color:lightcyan
+    }
+   
+.options{color:rgb(32, 1, 32);
+    font-size:10px}
+
+.sections{       
+        background-color: grey;
+         opacity:.75 ;
+         border:1px;
+         border-style: inset;
+         border-color: lightcyan;
+         font-family: cursive;
+       }
+
+.sections:hover {
+        opacity:1;
+        background-color:rgb(17, 15, 15);
+        color:lightcyan
+    }
+
+.section-text{
+    font-size: 35px;
+   
+  }
+  .clipboard{
+      font-size:80px
+  }
+  .about-icon{
+      font-size:80px
+  }
+ 
+/* //////portfolio page///////////////////////////////////// */
+.portfolio-content{
+    background-color:rgb(17, 15, 15)
+}
+
+.portfolio-header{
+    color:lightcyan
+}
+
+.pic-context{
+    color:lightcyan
+}
+
+.slides{
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px;
+    border-top: 2px;
+    border-color:lightcyan;
+    border-style: outset;
+    padding-left: 0px
+    
+}
+
+/* contact page */
+.contact-box{
+    background-color:lightcyan;
+    color:rgb(32, 1, 32)}
+
+.contact-invite{
+    color:darkcyan
+}
+
+.contact-text{
+    color:darkcyan
+}
+
+.contact-button{
+    background-color:rgb(32, 1, 32);
+color:lightcyan
+}
+
+/* about page */
+.about-box{
+    color:rgb(32, 1, 32);
+    background-color:lightcyan
+}
+
+#bruce{
+    color:darkcyan}
+
+/* navbar */
+.nav-container{
+    background-color:rgb(32, 1, 32);
+    border-bottom:2px;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    border-color:lightcyan;
+    border-style:solid;
+
+}
+
+.nav-title{
+    width:300px; 
+    height:80px;  
+    color:lightcyan;
+    font-family:'Black And White Picture', sans-serif!important;
+    font-size:30px
+}
+
+.nav-text{
+    color:darkcyan}
+
+.nav-text:hover{
+    color:lightcyan}
+
+/* footer */
+.foot{
+    height: 50px;;
+    background-color:rgb(32, 1, 32)
+}
+
+.foot-border{
+    border-top:2px;
+    border-bottom:0px;
+    border-left:0px;
+    border-right:0px;
+    border-color:lightcyan;
+    border-style: solid
+}
+
+.soc{
+    color:rgb(32, 1, 32)
+}
+
+.icon-big{
+    color:darkcyan;
+font-size:20px}
+
+.icon-big:hover{
+    color:lightcyan;
+font-size:30px}
