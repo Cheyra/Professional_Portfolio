@@ -8,7 +8,7 @@ font-family: cursive
 }
 
 .heading{
-    
+    color: darkcyan;
     background-color:rgb(22, 21, 21);
     border-bottom: 5px;
     border-bottom-color:darkcyan;
@@ -105,6 +105,7 @@ font-family: cursive
     
 }
 
+
 /* contact page */
 .contact-box{
     background-color:lightcyan;
@@ -153,7 +154,8 @@ color:lightcyan
 }
 
 .nav-text{
-    color:darkcyan}
+    color:darkcyan;
+cursor: pointer;}
 
 .nav-text:hover{
     color:lightcyan}
