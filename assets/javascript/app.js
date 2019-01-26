@@ -26,6 +26,7 @@ $(".contact").click(function () {
   $(".portfolio-content").hide()
   $(".about-me").hide()
   $(".navbar").show()
+  $("#smallScreenMenu").hide()
   $(".contact-box").show()
   $(".page-footer").show()
 })
@@ -39,6 +40,7 @@ $(".portfolio").click(function () {
   $(".about-me").hide()
   $(".page-footer").show()
   $(".navbar").show()
+  $("#smallScreenMenu").hide()
   $(".contact-box").hide()
   $(".portfolio-content").show()
   //slide show using carousel
@@ -66,6 +68,7 @@ $(".about").click(function () {
   $(".sectionHolder").hide()
   $(".page-footer").show()
   $(".navbar").show()
+  $("#smallScreenMenu").hide()
   $(".portfolio-content").hide()
   $(".about-me").show()
   $(".contact-box").hide()

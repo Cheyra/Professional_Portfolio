@@ -186,3 +186,8 @@ font-size:20px}
 .icon-big:hover{
     color:lightcyan;
 font-size:30px}
+
+@media screen and (max-width:800px){
+    smallScreenMenu {display:block};
+    navBigScreen {display: none}
+}
