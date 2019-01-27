@@ -29,8 +29,9 @@ font-family: cursive
 
 #myLogo{
     height:300px;
-   
+     
     }
+  
 
 .portfolio-title{
         
@@ -186,8 +187,59 @@ font-size:20px}
 .icon-big:hover{
     color:lightcyan;
 font-size:30px}
-
+.small-screen-nav{
+    display:none;
+   }
+.soc-small{
+    display:none;
+   }
+   .gob{
+       display:none;
+   }
 @media screen and (max-width:800px){
-    smallScreenMenu {display:block};
-    navBigScreen {display: none}
-}
+    .soc-small{
+        display:block;
+  
+    }
+    .small-screen-nav{display:block;
+   
+    }
+   
+    .gob{
+        display:block;
+    }
+    .navBigScreen{
+        display: none;
+            }
+    #soc-facebook{
+        display: block;
+        
+            }
+    #soc-twitter{
+        display: block;
+            }
+    #soc-linkedin{
+        display: block;
+            }
+    .soc{
+        display: none;
+            }
+    .bigscreen{
+        display: none !important}
+
+.image-wrapper img{
+    -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /*Safari */
+       transform: rotate(270deg); 
+       height:100px;
+       width:150px;
+       position:relative;
+       top: -25px
+       }
+       .social-links{
+           float: right
+       }
+       .spacer{
+           display:none
+       }
+       }

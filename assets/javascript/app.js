@@ -7,7 +7,7 @@ $(window).ready(function () {
   $(".page-footer").hide()
   $(".portfolio-content").hide()
   $(".about-me").hide()
-
+// showHome()
 //closes the modal on submit and calls the firebase function
 $(document).on("click", ".submit", function (event) {
   event.preventDefault();
@@ -16,10 +16,7 @@ $(document).on("click", ".submit", function (event) {
   $(".modal").modal('toggle')
    firebaseCall()
 })
-
-//if contact on home page or in nav bar is clicked it loads the contact
-// page and hides everything else
-$(".contact").click(function () {
+var showContact =function(){
   $(".foot").addClass("foot-border")
   $(".home").hide()
   $(".sectionHolder").hide()
@@ -29,10 +26,21 @@ $(".contact").click(function () {
   $("#smallScreenMenu").hide()
   $(".contact-box").show()
   $(".page-footer").show()
-})
-//if portfolio on home page or in nav bar is clicked it loads the portfolio
-// page and hides everything else
-$(".portfolio").click(function () {
+}
+var slideIndex = 0;
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  // Changes project every 5 seconds
+  if (slideIndex > x.length) { slideIndex = 1 }
+  x[slideIndex - 1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
+var showPortfolio = function(){
   $(".foot").removeClass("foot-border")
   $(".home").hide()
   $(".sectionHolder").hide()
@@ -44,25 +52,10 @@ $(".portfolio").click(function () {
   $(".contact-box").hide()
   $(".portfolio-content").show()
   //slide show using carousel
-  var slideIndex = 0;
+ 
   carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("slides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    // Changes project every 5 seconds
-    if (slideIndex > x.length) { slideIndex = 1 }
-    x[slideIndex - 1].style.display = "block";
-    setTimeout(carousel, 5000);
-  }
-})
-//if about on home page or in nav bar is clicked it loads the about
-// page and hides everything else
-$(".about").click(function () {
+}
+var showAbout = function(){
   $(".foot").addClass("foot-border")
   $(".home").hide()
   $(".sectionHolder").hide()
@@ -72,6 +65,26 @@ $(".about").click(function () {
   $(".portfolio-content").hide()
   $(".about-me").show()
   $(".contact-box").hide()
+}
+// var showHome = function(){
+
+// }
+//if contact on home page or in nav bar is clicked it loads the contact
+// page and hides everything else
+$(".contact").click(function () {
+ showContact()
+})
+//if portfolio on home page or in nav bar is clicked it loads the portfolio
+// page and hides everything else
+$(".portfolio").click(function () {
+showPortfolio()
+
+
+})
+//if about on home page or in nav bar is clicked it loads the about
+// page and hides everything else
+$(".about").click(function () {
+ showAbout()
 })
 //if home in the nav bar is clicked it loads the home
 // page and hides everything else
@@ -84,6 +97,30 @@ $(".home-button").click(function () {
   $(".page-footer").hide()
 
   $(".portfolio-content").hide()
+})
+//on mobile
+// /if someone clicks go
+$(".gob").click(function () {
+  // alert($(".navlist option:selected").val())
+  if ($(".navlist option:selected").val()=== "About"){
+    showAbout()
+  }
+  if ($(".navlist option:selected").val()=== "Portfolio"){
+    showPortfolio()
+  }
+  if ($(".navlist option:selected").val()=== "Contact"){
+    showContact()
+  }
+  if ($(".navlist option:selected").val()=== "Home"){
+  $(".home").show()
+  $(".sectionHolder").show()
+  $(".about-me").hide()
+  $(".contact-box").hide()
+  $(".navbar").hide()
+  $(".page-footer").hide()
+
+  $(".portfolio-content").hide()
+}
 })
 ////////////////////////////////////////////////////////
 //establishes variables for firebase

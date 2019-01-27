@@ -87,8 +87,9 @@
     </div>
     <!--HomePage Jumbotron-->
     <div class="jumbotron home mx-auto text-center pt-0 pb-0 heading ">
-
-        <img id="myLogo " class="mx-auto text-center" src="assets/images/dragon-icon.png ">
+        <div class="image-wrapper">
+            <img id="myLogo " class="mx-auto text-center" src="assets/images/dragon-icon.png ">
+        </div>
         <div class="text-center portfolio-title">
             <em>Dungeons & Dickinsons
                 <br> Web Development</em>
@@ -142,66 +143,66 @@
                     <!-- </div> -->
 
                 </div>
-                <div id="smallScreenMenu">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary nav-text dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Menu
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item nav-text" href="#">Home</a>
-                            <a class="dropdown-item nav-text" href="#">About</a>
-                            <a class="dropdown-item nav-text" href="#">Portfolio</a>
-                            <a class="dropdown-item nav-text" href="#">Contact</a>
-                        </div>
-                    </div>
+                <!-- <div id="smallScreenMenu"> -->
+
+                <!-- </div> -->
+                <!-- <div id= "navBigScreen"> -->
+                <div class="navBigScreen col-md-2">
+
+
+                    <nav class="navbar navbar-expand-lg">
+                        <a>
+                            <h4 class="navbar-brand home-button nav-text"> Home</h4>
+                        </a>
+                    </nav>
+
                 </div>
-                <div id= "navBigScreen">
-                    <div class="col-md-2">
 
+                <div class="navBigScreen col-md-2">
 
-                        <nav class="navbar navbar-expand-lg">
-                            <a>
-                                <h4 class="navbar-brand home-button nav-text"> Home</h4>
-                            </a>
-                        </nav>
+                    <nav class="navbar navbar-expand-lg ">
+                        <a>
+                            <h4 class="navbar-brand nav-text about">About</h4>
+                        </a>
+                    </nav>
 
-                    </div>
-
-                    <div class="col-md-2">
-
-                        <nav class="navbar navbar-expand-lg ">
-                            <a>
-                                <h4 class="navbar-brand nav-text about">About</h4>
-                            </a>
-                        </nav>
-
-                    </div>
-
-                    <div class="col-md-2">
-
-
-                        <nav class="navbar navbar-expand-lg ">
-                            <a>
-                                <h4 class="navbar-brand ml-0 nav-text portfolio">Portfolio</h4>
-                            </a>
-                        </nav>
-
-                    </div>
-
-
-
-                    <div class="col-md-2">
-
-
-                        <nav class="navbar navbar-expand-lg">
-                            <h4 class="navbar-brand nav-text contact">Contact</h4>
-                        </nav>
-
-                    </div>
                 </div>
+
+                <div class="navBigScreen col-md-2">
+
+
+                    <nav class="navbar navbar-expand-lg ">
+                        <a>
+                            <h4 class="navbar-brand ml-0 nav-text portfolio">Portfolio</h4>
+                        </a>
+                    </nav>
+
+                </div>
+
+
+
+                <div class="navBigScreen col-md-2">
+
+
+                    <nav class="navbar navbar-expand-lg">
+                        <h4 class="navbar-brand nav-text contact">Contact</h4>
+                    </nav>
+
+                </div>
+                <!-- </div> -->
 
             </div>
+            <br>
+            <select class=" navlist nav-text mr-20 small-screen-nav">
+
+
+                <option class="nav-text" value="Home"> Home</option>
+                <option class="nav-text" value="About"> About </option>
+                <option class="nav-text" value="Portfolio">Portfolio </option>
+                <option class="nav-text" value="Contact">Contact </option>
+
+            </select>
+            <button class="gob nav-text">Go</button>
         </div>
 
     </nav>
@@ -227,7 +228,7 @@
                 <!--Message Box-->
                 Message
                 <br>
-                <input class="contact-text" id="comment" type="text" name="Comment" size="80">
+                <input class="contact-text" id="comment" type="text" name="Comment" size="30">
                 <br>
                 <br>
 
@@ -286,7 +287,7 @@
                 <a href="https://eat-da--burgers.herokuapp.com/">
                     <img class=" mx-auto" src="assets/images/eatDaBurger.PNG" style="width:55%;  height:350px"> </a>
                 <div class="w3-display-bottomleft pic-context w3-container w3-padding-16 w3-black">
-                   Eat Da Burgers App
+                    Eat Da Burgers App
                     <br> Git Hub Link:
                     <a href="https://github.com/Cheyra/burger" target="blank">https://github.com/Cheyra/burger</a>
                 </div>
@@ -341,36 +342,55 @@
     <!--footer-->
     <footer class="page-footer foot foot-border pt-0 mt-5 mx-auto fixed-bottom">
         <!--social media links-->
-        <div class="row text-center">
-            <div class="col-md-3"></div>
+        <div class=" big-screen row text-center">
+            <div class=" col-md-3"></div>
             <div class="col-md-2">
-                <li class="soc">
+                <div class="soc">
                     <a href="http://twitter.com/intent/tweet?text=Click%20here%20for%20a%20cool%20upcoming%20Web%20Developer's%20Portfolio%20Site!%20https://bmccaw.github.io/Project_1/"
                         title="">
                         <span class="icon-big icon fab fa-twitter"></span>
                     </a>
-                </li>
+                </div>
             </div>
             <div class="col-md-2">
-                <li class="soc">
+                <div class="soc">
                     <a href="http://www.facebook.com/sharer/sharer.php?u=https://bmccaw.github.io/Project_1/" title="">
                         <span class=" icon-big icon fab fa-facebook"></span>
                     </a>
-                </li>
+                </div>
             </div>
             <div class="col-md-2 ">
-                <li class="soc ">
+                <div class="soc ">
                     <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://bmccaw.github.io/Project_1/" title=" ">
                         <span class="icon-big icon fab fa-linkedin "></span>
                     </a>
-                </li>
+                </div>
                 <div class="col-md-3 ">
 
 
 
                 </div>
             </div>
-
+        </div>
+        <div class=" row small-screen text-center">
+                        <div class=" col-ms-3 soc-small mx-auto px-3 text-center " id="twitter-soc"S>
+                <a href="http://twitter.com/intent/tweet?text=Click%20here%20for%20a%20cool%20upcoming%20Web%20Developer's%20Portfolio%20Site!%20https://bmccaw.github.io/Project_1/"
+                    title="">
+                    <span class="icon-big icon fab fa-twitter"></span>
+                </a>
+            </div>
+            <div class=" col-ms-3 soc-small mx-auto px-3 text-center" id="facebook-soc">
+                <a href="http://www.facebook.com/sharer/sharer.php?u=https://bmccaw.github.io/Project_1/" title="">
+                    <span class=" icon-big icon fab fa-facebook"></span>
+                </a>
+            </div>
+        
+            <div class="col-ms-3 soc-small mx-auto px-3 text-center" id="linkedin-soc">
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://bmccaw.github.io/Project_1/" title=" ">
+                    <span class="icon-big icon fab fa-linkedin "></span>
+                </a>
+            </div>
+        </div>
 
     </footer>
 
